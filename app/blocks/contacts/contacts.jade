@@ -1,0 +1,9 @@
+mixin contacts()
+	+b.contacts
+		+e('a').phone(href='tel:+79194330248') +7 (919) 433-02-48
+		+e('a').other(href='todo') Белгород, <br/> 5-й заводской переулок, 1а
+		+e('a').email(href='mailto:zazerkalye_31@mail.ru')
+			+e.email-text e-mail:
+			= ' '
+			| zazerkalye_31@mail.ru
+

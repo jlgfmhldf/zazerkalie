@@ -1,0 +1,15 @@
+include ../menu/menu
+include ../logo/logo
+include ../contacts/contacts
+
+mixin index()
+	- index = getData('index')
+	+b.page
+		+e.menu
+			+menu(index.menu)
+		+e.logo-and-contacts
+			+e.logo
+				+logo
+			+e.contacts
+				+contacts
+
