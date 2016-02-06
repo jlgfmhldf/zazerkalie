@@ -1,15 +1,20 @@
 include ../menu/menu
 include ../logo/logo
 include ../contacts/contacts
+include ../slideshow/slideshow
 
 mixin index()
-	- index = getData('index')
+	- menu = getData('menu').menu
+	- slideshow = getData('slideshow').slideshow
+
 	+b.page
 		+e.menu
-			+menu(index.menu)
+			+menu(menu)
 		+e.logo-and-contacts
 			+e.logo
 				+logo
 			+e.contacts
 				+contacts
+		+e.slideshow
+			+slideshow(slideshow)
 

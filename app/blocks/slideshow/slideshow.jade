@@ -1,0 +1,7 @@
+mixin slideshow(data)
+	+b.slideshow
+		each content in data
+			+e('a').item(href=content.href style='background-image: url(' + content.background + ')')
+				+e('span').caption
+					+e('span').caption-text=content.caption
+			= ' '
