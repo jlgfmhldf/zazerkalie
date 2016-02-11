@@ -2,6 +2,7 @@ include ../menu/menu
 include ../logo/logo
 include ../contacts/contacts
 include ../slideshow/slideshow
+include ../main-content/main-content
 
 mixin index()
 	- menu = getData('menu').menu
@@ -17,4 +18,16 @@ mixin index()
 				+contacts
 		+e.slideshow
 			+slideshow(slideshow)
+
+		+e.content-wrapper
+			+e.main
+				+e.main-content
+					+main-content
+				+e.main-left
+					+e.phone
+					+e.news
+					+e.holding
+					+e.links
+
+
 

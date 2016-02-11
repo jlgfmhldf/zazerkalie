@@ -1,7 +1,19 @@
 .list
-	padding-x 20px
+	margin 20px 0
 
 	&__item
+		position relative
 		display block
-		font-size 16px
-		line-height 24px
+		line-height 160%
+		margin-top 0
+		margin-bottom 5px
+		padding-left 30px
+
+		&:after
+			content ''
+			display inline-block
+			position absolute
+			top 7px
+			left 20px
+			background-image url(../images/bullet.gif)
+			size 5px
