@@ -3,6 +3,10 @@ include ../logo/logo
 include ../contacts/contacts
 include ../slideshow/slideshow
 include ../main-content/main-content
+include ../left-block/left-block
+include ../time/time
+include ../btn/btn
+include ../main-left/main-left
 
 mixin index()
 	- menu = getData('menu').menu
@@ -24,10 +28,4 @@ mixin index()
 				+e.main-content
 					+main-content
 				+e.main-left
-					+e.phone
-					+e.news
-					+e.holding
-					+e.links
-
-
-
+						+main-left

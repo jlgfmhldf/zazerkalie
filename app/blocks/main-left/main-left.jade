@@ -1,0 +1,19 @@
+mixin main-left()
+  +left-block('ТЕЛЕФОНЫ В МОСКВЕ')
+    .left-block__item
+      +b.contacts
+        +e.wrapper
+          +e('a').phone(href='tel:+79194330248') +7 (919) 433-02-48
+          
+    .left-block__item			
+      +time
+      
+    .text  
+      +btn({
+        text: 'разместить заказ',
+        style: 'green'
+      })
+
+    +btn({
+      text: 'обратный заказ'
+    })
