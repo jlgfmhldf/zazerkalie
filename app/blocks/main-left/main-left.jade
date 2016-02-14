@@ -1,19 +1,77 @@
 mixin main-left()
-  +left-block('ТЕЛЕФОНЫ В МОСКВЕ')
-    .left-block__item
-      +b.contacts
-        +e.wrapper
-          +e('a').phone(href='tel:+79194330248') +7 (919) 433-02-48
-          
-    .left-block__item			
-      +time
-      
-    .text  
-      +btn({
-        text: 'разместить заказ',
-        style: 'green'
-      })
-
-    +btn({
-      text: 'обратный заказ'
+  +b.main-left
+    +center-block({
+      title: 'телефоны в москве',
+      contentIndent: 10
     })
+      +e.item
+        +b.contacts
+          +e.wrapper
+            +e('a').phone(href='tel:+79194330248') +7 (919) 433-02-48
+
+      +e.item
+        +time
+
+      .text
+        +btn({
+          text: 'разместить заказ',
+          style: 'green'
+        })
+
+      +btn({
+        text: 'обратный заказ'
+      })
+      
+    +e.letter-boss
+      +e.letter-boss-content
+        +e.letter-boss-image
+        +e('a').letter-boss-text.warning.bold(href='#') Письмо Директору
+        
+    +center-block({
+      title: 'новости компании',
+      contentIndent: '0',
+      type: 'news'
+    })
+      +e.news
+        +e.news-item
+          +e('a').news-title.bold.text(href='#') - 12% на Стекло б/цв 12 мм
+          +e.news-text.text
+            | Уважаемые партнеры!
+            | С 8 по 12 февраля 2016 года, цена на Стекло б/цв 12 мм снижена на 12%.
+            
+        +e.news-item
+          +e('a').news-title.bold.text(href='#') - Музейное стекло!
+          +e.news-text.text
+            | Уважаемые партнеры! Сообщаем о новой позиции в ассортименте прозрачного стекла на нашем складе.
+                
+        +e.news-item
+          +e('a').news-title.bold.text(href='#') Пленка EVA 0.38мм уже на складе!
+          +e.news-text.text
+            | С 8 по 12 февраля 2016 года, цена на Стекло б/цв 12 мм снижена на 12%. 
+            
+            
+    +center-block({
+      title: 'наш холдинг',
+      contentIndent: '0'
+    })   
+    
+      +e.holding
+        +e('a').holding-item(href='#')
+          img(src='https://placeimg.com/200/44/animals?random=1')
+          
+        +e('a').holding-item(href='#')
+          img(src='https://placeimg.com/200/44/animals?random=2')  
+          
+        +e('a').holding-item(href='#')
+          img(src='https://placeimg.com/200/44/animals?random=3')    
+          
+      +e.holding
+        +e('a').holding-item.link.bold(href='#') Изготовление стеклопакетов
+        +e('a').holding-item.link.bold(href='#') Изготовление триплекса
+        +e('a').holding-item.link.bold(href='#') Закалка стекла
+        +e('a').holding-item.link.bold(href='#') Изготовление стеклопакетов
+        +e('a').holding-item.link.bold(href='#') Изготовление стеклопакетов
+        +e('a').holding-item.link.bold(href='#') Изготовление стеклопакетов
+        +e('a').holding-item.link.bold(href='#') Изготовление стеклопакетов
+        
+              
