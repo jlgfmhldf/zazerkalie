@@ -1,0 +1,10 @@
+mixin uppercase-title(data)
+  - text = data.text
+  - style = data.style
+  - leftIndent = data.leftIndent
+  - b = 'uppercase-title'
+  - classes = style?b + '_style_'+style:''
+  
+  +b.uppercase-title(class=classes style='padding-left:'+ leftIndent + 'px')&attributes(attributes)
+    +e.text=text
+  

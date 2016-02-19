@@ -1,2 +1,15 @@
+include ../search/search
+include ../by/by
+include ../panel/panel
+
 mixin sidebar()
   +b.sidebar
+    +e.search
+      +search
+      
+    +e.by
+      +by
+      
+    +e.item
+      +panel
+    

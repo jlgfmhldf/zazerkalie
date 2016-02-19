@@ -1,0 +1,19 @@
+include ../uppercase-title/uppercase-title
+
+mixin by()
+  +b.by
+    +e.header
+      +uppercase-title({
+        text: 'Б/У ОБОРУДОВАНИЕ',
+        style: 'white',
+        leftIndent: 10
+        })
+    +e('img').banner.text(src='https://placeimg.com/240/91/animals?random=1')
+    +e.text
+      span.strong.warning Внимание!
+      = ' '
+      | Предлагаем б/у оборудование для обработки стекла и зеркал.
+      = ' '
+      a.link(href='')  Подробнее... 
+      
+ 

@@ -1,0 +1,30 @@
+.uppercase-title
+  position relative
+  background-color $gray
+  padding 0 20px
+
+  &:after
+    content ''
+    display block
+    width 100%
+    height 1px
+    position absolute
+    bottom 0
+    left -1px
+    background #ddd
+
+  &__text
+    display inline-block
+    position relative
+    z-index 2
+    padding 12px 25px 4px 0
+    border-bottom 1px solid $blue
+    color $blue
+    letter-spacing 1px
+    font-weight bold
+    text-transform uppercase
+    box-sizing border-box
+    line-height 1.2
+
+  &_style_white
+    background #fff

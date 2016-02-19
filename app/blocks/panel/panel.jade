@@ -1,0 +1,24 @@
+include ../uppercase-title/uppercase-title
+
+mixin panel()
+  +b.panel
+  
+    +uppercase-title({
+      text: 'Декоративные панели ГЛАССПАН',
+      style: 'white',
+      leftIndent: 10
+      })
+  
+    +e.wrapper
+    
+      +e.item
+        +e('img').img(src='https://placeimg.com/65/65/animals?random=5')
+      = ' '  
+          
+      +e.item
+        +e('img').img(src='https://placeimg.com/65/65/animals?random=6')
+      = ' '  
+          
+      +e.item
+        +e('img').img(src='https://placeimg.com/65/65/animals?random=7')
+      = ' '  
