@@ -3,7 +3,34 @@
 	background-color #f6f6f6
 	border-top 1px solid #ccc
 
+	&__up
+		display inline
+		font-size 11px
+		line-height 12px
+		position absolute
+		right 0
+		top 0
+		bottom 0
+		margin auto
+		padding-left 20px
+		height 12px
+
+		&:hover
+			background $blue
+			color #fff
+
+		&:before
+			sprite $arrow
+			position absolute
+			content ''
+			left 0
+			top 0
+			bottom 0
+			margin auto
+			transform rotate(180deg)
+
 	&__breadcrumbs
+		position relative
 		padding-y 5px
 		text-transform uppercase
 		border-bottom 1px solid #ccc
@@ -13,6 +40,7 @@
 			padding-x 2px
 			padding-right 20px
 			font-size 11px
+			line-height 12px
 
 		&-item:not(:last-child)
 
