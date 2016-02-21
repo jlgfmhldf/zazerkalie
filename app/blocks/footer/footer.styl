@@ -1,5 +1,34 @@
 .footer
-	padding-top 10px
+	margin-top 20px
+	background-color #f6f6f6
+	border-top 1px solid #ccc
+
+	&__breadcrumbs
+		padding-y 5px
+		text-transform uppercase
+		border-bottom 1px solid #ccc
+
+		&-item
+			position relative
+			padding-x 2px
+			padding-right 20px
+			font-size 11px
+
+		&-item:not(:last-child)
+
+			&:hover
+				background $blue
+				color #fff
+
+			&:after
+				sprite $arrow
+				position absolute
+				content ''
+				right 0
+				top 0
+				bottom 0
+				margin auto
+				transform rotate(-90deg)
 
 	&__copyright
 		display flex

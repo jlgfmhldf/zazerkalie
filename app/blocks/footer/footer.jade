@@ -1,9 +1,8 @@
-include ../felixexter/felixexter
-
 mixin footer()
 	+b.footer&attributes(attributes)
-		+e.copyright
-			+e('a').link(href='https://github.com/felixexter' title="Felix Exter")
-				+felixexter
-			+e('a').link(href='http://csssr.ru')
-				+icon('csssr').footer__logo
+		.wrapper
+			+e.breadcrumbs
+				+e('a').breadcrumbs-item.link(href='#') ПРОДУКЦИЯ
+				+e('a').breadcrumbs-item.link(href='#') ДЕКОРАТИВНЫЕ ПАНЕЛИ ГЛАССПАН
+				+e('span').breadcrumbs-item СЕРИЯ DECOR GLASS
+		

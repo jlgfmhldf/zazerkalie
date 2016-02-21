@@ -9,6 +9,7 @@ include ../btn/btn
 include ../main-center/main-center
 include ../sidebar/sidebar
 include ../main-footer/main-footer
+include ../footer/footer
 
 mixin index()
 	- menu = getData('menu').menu
@@ -37,3 +38,5 @@ mixin index()
 						
 			+e.sidebar
 				+sidebar
+				
+	+footer
