@@ -1,7 +1,0 @@
-include ../mark/mark
-
-mixin list(list)
-	+b('ul').list&attributes(attributes)
-		each item in list
-			+e('li').item.text=item
-
