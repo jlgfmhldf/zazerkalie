@@ -1,59 +1,59 @@
 include ../uppercase-title/uppercase-title
 
 mixin main-footer()
-  +b.main-footer
-    +e.item
-      +e.content
-        +uppercase-title({
-          text: 'наш адрес:',
-          style: 'black',
-          leftIndent: 10
-          }).main-footer__title
-          
-        +e.text.text
-          .strong
-            г. Москва, </br>
-            ул. Новоостаповская </br>
-            д. 5, строение 1 </br>
-          <a class='link'>Схема проезда </a></br></br>
-          
-          .strong
-            Тел: (495) 660-88-37 </br>
-            Тел: (495) 988-01-62 </br>
+	+b.main-footer
+		+e.item
+			+e.content
+				+uppercase-title({
+					text: 'наш адрес:',
+					style: 'black',
+					leftIndent: 10
+					}).main-footer__title
+
+				+e.text.text
+					.strong.
+						г. Москва, </br>
+						ул. Новоостаповская </br>
+						д. 5, строение 1 </br>
+					<a class='link'>Схема проезда </a></br></br>
+
+					.strong.
+						Тел: (495) 660-88-37 </br>
+						Тел: (495) 988-01-62 </br>
 
 
-    +e.item
-      +e.content
-        +uppercase-title({
-          text: 'ПРОИЗВОДСТВО',
-          style: 'black',
-          leftIndent: 10
-          }).main-footer__title
-          
-        +e.text.text
-          .strong.
-            Московская область, </br>
-            г. Люберцы, </br>
-            Ул. 65 лет Победы, 1к13 </br>
-          <a class='link'>Схема проезда </a></br></br>
-          .strong
-            Тел: (495) 518-02-86</br>
-            Тел: (495) 518-04-59</br>
-        
-    +e.item
-      +e.content
-        +uppercase-title({
-          text: 'УСЛУГИ',
-          style: 'black',
-          leftIndent: 10
-          }).main-footer__title
-          
-        +e.text.text
-          .strong
-            Обработка стекла </br>
-            Закалка стекла </br>
-            Изготовление триплекса </br>
-            Стеклопакеты</br></br>
-            
-          .strong
-            Тел: (495) 518-01-62</br>
+		+e.item
+			+e.content
+				+uppercase-title({
+					text: 'ПРОИЗВОДСТВО',
+					style: 'black',
+					leftIndent: 10
+					}).main-footer__title
+
+				+e.text.text
+					.strong.
+						Московская область, </br>
+						г. Люберцы, </br>
+						Ул. 65 лет Победы, 1к13 </br>
+					<a class='link'>Схема проезда </a></br></br>
+					.strong.
+						Тел: (495) 518-02-86</br>
+						Тел: (495) 518-04-59</br>
+
+		+e.item
+			+e.content
+				+uppercase-title({
+					text: 'УСЛУГИ',
+					style: 'black',
+					leftIndent: 10
+					}).main-footer__title
+
+				+e.text.text
+					.strong.
+						Обработка стекла </br>
+						Закалка стекла </br>
+						Изготовление триплекса </br>
+						Стеклопакеты</br></br>
+
+					.strong.
+						Тел: (495) 518-01-62</br>

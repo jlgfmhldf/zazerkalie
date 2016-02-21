@@ -3,6 +3,37 @@
 	background-color #f6f6f6
 	border-top 1px solid #ccc
 
+	&__copy
+		padding-bottom 10px
+		font-size 11px
+		color #666
+
+	&__menu
+		font-size 0
+		padding-y 10px
+
+	&__menu-item
+		display inline-block
+		padding-x 10px
+		color #666
+		font-weight bold
+		line-height 13px
+		text-decoration none
+		font-size 11px
+		line-height 11px
+		border-right 1px solid #999
+
+		&:hover
+			color $blue
+
+		&:first-child
+			padding-left 0
+
+		&:last-child
+			border-right 0
+
+
+
 	&__up
 		display inline
 		font-size 11px
@@ -42,7 +73,7 @@
 			font-size 11px
 			line-height 12px
 
-		&-item:not(:last-child)
+		&-item:not(:last-of-type)
 
 			&:hover
 				background $blue
