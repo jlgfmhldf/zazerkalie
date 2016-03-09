@@ -1,0 +1,36 @@
+.breadcrumbs
+
+	&__item
+		position relative
+		display inline-block
+		margin-right: 6px
+		text-decoration: none
+		color #000
+		//border 2px solid $blue
+		border-right-color transparent
+		border-radius 4px
+		//background-color invert($blue)
+		color $blue
+		font-weight bold
+		vertical-align middle
+		transition-duration .5s
+
+		&:after
+			content ' >'
+			display: inline-block
+			font-size 122%
+			padding-left 4px
+
+		&:hover
+			text-shadow 1px 1px 1px invert($blue)
+
+		&_current
+			color #000
+			background none
+			border 0
+
+			&:after
+				display none
+
+			&:hover
+				text-shadow 0 0 0 transparent

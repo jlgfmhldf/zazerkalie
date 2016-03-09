@@ -1,9 +1,15 @@
 include ../list/list
 include ../main-photos/main-photos
 include ../btn/btn
+include ../breadcrumbs/breadcrumbs
 
 mixin main-content()
 	+b.main-content
+
+		+e.breadcrumbs
+
+			+breadcrumbs
+
 		+e.title О компании
 
 		+e.center
