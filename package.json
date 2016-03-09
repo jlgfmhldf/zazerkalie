@@ -96,5 +96,9 @@
     "webpack": "^1.12.9",
     "webpack-stats-logger": "^1.0.1",
     "webpack-stream": "^2.3.0"
+  },
+  "dependencies": {
+    "lightbox2": "^2.8.2",
+    "simplelightbox": "^1.8.0"
   }
 }

@@ -3,11 +3,6 @@ include ../uppercase-title/uppercase-title
 
 mixin our-production(data)
   +b.our-production
-    +uppercase-title({
-      text: 'Наше производство',
-      style: 'white',
-      leftIndent: 10
-      }).our-production__title
-      
+
     +e.links
       +sidebar-banner-menu(data)

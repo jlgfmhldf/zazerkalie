@@ -1,34 +1,28 @@
 .btn
 	width 100%
+	max-width 400px
 	height 46px
 	margin-bottom 3px
 	border-radius 5px
-	border-top 2px solid  #00c9f3
-	border-bottom 2px solid #0065B9
-	border-left 0
-	border-right 0
-	background-image linear-gradient(to bottom, #00aaec 0%,#0073d1 100%) /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00aaec+0,0073d1+100 */
+	background-color $menuActive
 	box-sizing border-box
-	box-shadow 0 3px 3px rgba(#0073d1, 0.46)
+	border 0
+	transition-duration .8s
 
 	&:hover
-		background linear-gradient(to bottom, #00abec 0%,#008ede 100%) /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00abec+0,008ede+100 */
+		background-color darken($menuActive, 5)
 
 	&__text
 		font-style italic
 		text-decoration none
 		text-transform uppercase
-		color #fff
+		color $white
 		font-size 15px
 		line-height 45px
 		letter-spacing 1.8px
 
 	&_style_green
-		border-top 2px solid  #6DAD46
-		border-bottom 2px solid #498C39
-		background-image linear-gradient(to bottom, #5fa844 0%,#45943c 100%)
-		box-shadow 0 3px 3px rgba(#45943c, 0.46)
+		background-color $green
 
 		&:hover
-			background-image linear-gradient(to bottom, #5fa844 0%,#529e40 100%)
-			border-bottom 1px solid #478b38
+			background-color darken($green, 5)

@@ -16,27 +16,29 @@ mixin index()
 	- slideshow = getData('slideshow').slideshow
 
 	+b.page(id='top')
-		+e.menu
-			+menu(menu)
 		+e.logo-and-contacts
 			+e.logo
 				+logo
 			+e.contacts
 				+contacts
-		+e.slideshow
-			+slideshow(slideshow)
+
+		+e.menu
+			+menu(menu)
+
+		+e.banner
+			img(src='https://placeimg.com/980/250/animals?random=345' width='100%' height='250px')
 
 		+e.content-wrapper
+
+			+e.sidebar
+				+sidebar-banner-menu(getData('our-production.json'))
+
+
 			+e.main
 				+e.main-top
 					+e.main-content
 						+main-content
-					+e.main-center
-							+main-center
-				+e.main-footer
-					+main-footer
-						
-			+e.sidebar
-				+sidebar
-				
+
+
+
 	+footer

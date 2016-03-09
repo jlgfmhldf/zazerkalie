@@ -1,66 +1,54 @@
+$menuHeight = 48px
+
 .menu
+	position relative
+	z-index 100
 	width 100%
-	height 37px
-	border-bottom 1px solid $menuBorderColor
+	background $blue
+	box-sizing border-box
+	padding $menuHeight - 30px 0
 
 	&__item
-		height 100%
 		font-size 0
 		display inline-block
 		vertical-align top
 		position relative
-		margin 0 10px 0 0
-		padding 5px 10px 5px 12px
+		margin 0 5px
+		padding 0 8px
 		cursor pointer
+		box-sizing border-box
+		text-transform uppercase
+		height 30px
+		line-height 30px
+		border-radius 3px
+		transition-duration .5s
 
-		&:before
-			content ''
-			sprite $arrow
-			position absolute
-			top 8px
-			left 0
 
-		&:after
-			content ''
-			position absolute
-			bottom -1px
-			left 0
-			width 100%
-			height 1px
-			background-color $blue
-			display none
+		&_active
+		&:hover
+			background-color $menuActive
+
+
+
 
 		&-name
-			font-size 12px
-			line-height 14px
-			color #858585
+			font-size 13px
+			color $white
 			font-weight bold
-
-		&-descr
-			font-size 11px
-			line-height 1
-			display block
-			color #999
-			font-weight normal
 
 		&:hover &-descr
 		&:hover &-name
 		&_active &-descr
 		&_active &-name
-			color $blue
-
-		&_active
-
-			&:after
-				display block
+			color $white
 
 		&_empty
-			padding 5px 10px 5px 0
 
 			&:before
 				display none
 
 	&__link
+		display block
 		text-decoration none
 
 	&__submenu
@@ -71,7 +59,7 @@
 		top 35px
 		left 0
 		border 1px solid #ddd
-		background-color #fff
+		background-color $white
 
 		&-item
 			display block
@@ -89,3 +77,6 @@
 
 	&__item:hover &__submenu
 		display block
+
+	&__item:hover:before
+		transform rotate(180deg)

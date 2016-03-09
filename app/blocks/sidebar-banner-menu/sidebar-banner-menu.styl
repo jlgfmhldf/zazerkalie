@@ -1,51 +1,55 @@
 .sidebar-banner-menu
-  background-color #f8f8f8
-  padding 10px
+	background-color #f8f8f8
 
-  &__content
-    padding 12px
-    background-color #fff
-    border 1px solid #DDD
+	&__img-wrapper
+		font-size 0
+		line-height 0
+		display block
 
-  &__img-wrapper
-    font-size 0
-    line-height 0
-    display block
+	&__text
+		position absolute
+		bottom 0
+		left 0
+		width 100%
+		display block
+		text-transform uppercase
+		font-size 12px
+		font-weight bold
+		margin-top 4px
+		color $white
+		background rgba($blue, .5)
+		padding 5px
 
-  &__text
-    display block
-    text-transform uppercase
-    font-family serif
-    font-size 12px
-    font-weight bold
-    margin-top 4px
+	&__item
+		position relative
+		display block
+		border 1px solid #DDD
+		text-decoration none
+		transition-duration .5s
+		height 82px
 
-  &__item
-    display block
-    border 1px solid #DDD
-    padding 4px
-    margin-bottom 10px
-    text-decoration none
-    color #000
+		&:hover
+			opacity .8
 
-  &__img-wrapper[data-label]
-    position relative
-    overflow hidden
 
-    &:before
-      content attr(data-label)
-      display block
-      position absolute
-      width 80px
-      height 18px
-      line-height 18px
-      right 0
-      top 0
-      transform rotate(45deg) translate(23px, -8px)
-      background #6dad46
-      text-transform uppercase
-      color #fff
-      font-size 10px
-      letter-spacing 0.07em
-      text-align center
-      z-index 2
+	&__img-wrapper[data-label]
+		position relative
+		overflow hidden
+
+		&:before
+			content attr(data-label)
+			display block
+			position absolute
+			width 80px
+			height 18px
+			line-height 18px
+			right 0
+			top 0
+			transform rotate(45deg) translate(23px, -8px)
+			background #6dad46
+			text-transform uppercase
+			color $white
+			font-size 10px
+			letter-spacing 0.07em
+			text-align center
+			z-index 2

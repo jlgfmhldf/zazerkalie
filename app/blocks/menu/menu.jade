@@ -2,18 +2,18 @@ mixin menu(data)
 
 	+b('nav').menu
 		each content in data
-			- emptyClass = content.submenu?'':'menu__item_empty'
+			- emptyClass = 'menu__item_empty'
 			- activeClass = content.type === 'active'?'menu__item_active':''
 
 			+e.item(class=emptyClass + ' ' + activeClass)
 				+e('a').link(href=jv0)
 					+e.item-name=content.name[0]
 
-					if content.name[1]
-						+e.item-descr=content.name[1]
+					//-if content.name[1]
+					//-	+e.item-descr=content.name[1]
 
-				if content.submenu
-					+submenu(content.submenu)
+				//-if content.submenu
+				//-	+submenu(content.submenu)
 
 
 mixin submenu(data)

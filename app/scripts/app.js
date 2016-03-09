@@ -1,6 +1,7 @@
-import svg4everybody from 'svg4everybody';
+import lightbox from 'simplelightbox';
 import $ from 'jquery';
 
 $(() => {
-	svg4everybody();
+	$('a').lightbox();
+
 });
