@@ -2,6 +2,7 @@ include ../list/list
 include ../main-photos/main-photos
 include ../btn/btn
 include ../breadcrumbs/breadcrumbs
+include ../products/products
 
 mixin main-content()
 	+b.main-content
@@ -34,6 +35,11 @@ mixin main-content()
 			br
 			br
 			| На сегодняшний день <strong> Стекольная компания "Стекло и Стеклоизделия"</strong> занимает лидирующие позиции в области переработки стекла, а так же оптовой и розничной продажи стекла от 2 до 19мм различного типа: бесцветное, тонированное, окрашенное в массе, осветленное стекло оптивайт, сатинат, мателюкс, мателак, лакобель, GlassPan, триплекс.
+
+		+e.title Продукты:
+
+		+e.products
+			+products
 
 		+e('img').image(src='assets/images/fish.jpg')
 

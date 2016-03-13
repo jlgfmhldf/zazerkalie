@@ -5,15 +5,12 @@
 		display inline-block
 		margin-right: 6px
 		text-decoration: none
-		color #000
-		//border 2px solid $blue
 		border-right-color transparent
 		border-radius 4px
-		//background-color invert($blue)
 		color $blue
-		font-weight bold
 		vertical-align middle
 		transition-duration .5s
+		font-family $HelveticaItalic
 
 		&:after
 			content ' >'
@@ -23,6 +20,7 @@
 
 		&:hover
 			text-shadow 1px 1px 1px invert($blue)
+			text-decoration: underline
 
 		&_current
 			color #000

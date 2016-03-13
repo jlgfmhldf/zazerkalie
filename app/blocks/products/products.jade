@@ -1,0 +1,8 @@
+mixin products()
+	+b.products
+		- n = 0;
+
+		while n < 3
+			+e.product
+				+e('img').photo(src='https://placeimg.com/185/185/animals?random='+n++)
+				+e('span').text Коннектор стена-стекло, 520 р/шт.
