@@ -1,7 +1,10 @@
-import lightbox from 'simplelightbox';
+import lightbox from 'lightbox2';
 import $ from 'jquery';
 
 $(() => {
-	$('a').lightbox();
+	"use strict";
 
+	lightbox.option({
+		albumLabel: "Фото %1 из %2"
+	});
 });
