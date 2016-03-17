@@ -4,6 +4,7 @@ include ../btn/btn
 include ../breadcrumbs/breadcrumbs
 include ../products/products
 include ../scripts/scripts
+include ../table/table
 
 mixin main-content()
 	+b.main-content
@@ -41,6 +42,9 @@ mixin main-content()
 
 		+e.products
 			+products
+
+		+e.table
+			+table
 
 
 		+e.text.text Скачать прайс-лист
