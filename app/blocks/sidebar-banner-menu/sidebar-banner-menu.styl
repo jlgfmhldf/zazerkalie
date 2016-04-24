@@ -5,6 +5,10 @@
 		font-size 0
 		line-height 0
 		display block
+		height 100%
+		background-size cover
+		background-repeat no-repeat
+		background-position center
 
 	&__text
 		position absolute
@@ -27,6 +31,7 @@
 		text-decoration none
 		transition-duration .5s
 		height 100px
+		box-sizing border-box
 
 		&:hover
 			opacity .8
@@ -53,3 +58,10 @@
 			letter-spacing 0.07em
 			text-align center
 			z-index 2
+
+	&_new &__text
+		right 0
+		height 100%
+		padding 40px
+		background rgba(0, 18, 29, 0.62)
+		font-family $HelveticaUltraLight

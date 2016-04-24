@@ -31,11 +31,6 @@ $menuHeight = 48px
 		&:hover
 			background-color $menuActive
 
-		&-name
-			font-size 13px
-			color $white
-			font-family $HelveticaLight
-
 		&:hover &-descr
 		&:hover &-name
 		&_active &-descr
@@ -50,33 +45,6 @@ $menuHeight = 48px
 	&__link
 		display block
 		text-decoration none
-
-	&__submenu
-		display none
-		width 200px
-		padding 10px
-		position absolute
-		top 35px
-		left 0
-		border 1px solid #ddd
-		background-color $white
-
-		&-item
-			display block
-			border-bottom 1px dotted #ddd
-			color #666
-			padding 5px 20px 5px 0
-			font-size 12px
-			cursor pointer
-
-			&:hover
-				color $blue
-
-			&:last-child
-				border none
-
-	&__item:hover &__submenu
-		display block
-
-	&__item:hover:before
-		transform rotate(180deg)
+		font-size 13px
+		color $white
+		font-family $HelveticaLight

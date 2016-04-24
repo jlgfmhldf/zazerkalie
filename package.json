@@ -98,6 +98,7 @@
     "webpack-stream": "^2.3.0"
   },
   "dependencies": {
+    "gulp": "^3.9.0",
     "lightbox2": "^2.8.2",
     "simplelightbox": "^1.8.0"
   }
