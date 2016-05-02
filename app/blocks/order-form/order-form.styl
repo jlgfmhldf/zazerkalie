@@ -1,0 +1,108 @@
+.order-form
+	opacity 0
+	visibility hidden
+	z-index -30
+
+	&_active
+		opacity 1
+		visibility visible
+		z-index 100
+
+	&__close
+		position fixed
+		top 0
+		left 0
+		right 0
+		bottom 0
+
+	&__form
+		background-color rgba(#fff, .80)
+		padding 20px
+		width 500px
+		height auto
+		center()
+		z-index 300
+
+
+	&__input
+		width 100%
+		display block
+		padding 10px
+		border 1px solid $grayBorder
+		border-radius 2px
+
+		&:focus:not(&_file)
+			box-shadow 0 1px 0 0 rgba($blue, .80)
+
+		&_textarea
+			resize vertical
+
+		&_file
+			border 1px dashed $yellow
+			background lighten($yellow, 35)
+			cursor pointer
+
+	&__btn
+		margin auto
+
+	&__title
+
+		&_result
+			text-align center
+			font-size 150%
+			position absolute
+			top 50%
+			left 50%
+			transform translate(-50%, -50%)
+
+	&__field
+		position relative
+		padding-bottom 25px
+		overflow hidden
+
+		&:last-of-type
+			padding-bottom 0
+
+		label.error
+			position: absolute
+			right: 7px
+			top: 8px
+			color $red
+			max-width 25px
+			max-height: 20px
+			overflow hidden
+			transition-duration 1s
+			cursor pointer
+			white-space nowrap
+
+			&:hover
+				overflow visible
+				max-width: 999px
+
+			&:before
+				content '!'
+				display inline-block
+				border 1px solid $red
+				border-radius 50%
+				color $red
+				width 15px
+				height 15px
+				text-align center
+				line-height 15px
+				font-size 13px
+				opacity .7
+				margin 0 5px
+
+
+		input.error
+			border 1px solid $red
+
+//&__result
+		//opacity 0
+		//visibility hidden
+		//
+		//&_active
+		//	opacity 1
+		//	visibility visible
+
+

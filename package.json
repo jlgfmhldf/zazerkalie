@@ -52,7 +52,7 @@
     "babel-core": "^5.8.34",
     "babel-eslint": "^4.1.5",
     "babel-loader": "^5.4.0",
-    "bemto.jade": "^0.2.2",
+    "bemto.jade": "*",
     "browser-sync": "^2.10.0",
     "debuga": "^1.0.2",
     "eslint": "^1.9.0",
@@ -99,6 +99,8 @@
   },
   "dependencies": {
     "gulp": "^3.9.0",
+    "jquery-mask-plugin": "^1.14.0",
+    "jquery-validation": "^1.15.0",
     "lightbox2": "^2.8.2",
     "simplelightbox": "^1.8.0"
   }

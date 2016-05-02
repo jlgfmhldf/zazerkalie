@@ -10,6 +10,7 @@ include ../main-center/main-center
 include ../sidebar/sidebar
 include ../main-footer/main-footer
 include ../footer/footer
+include ../order-form/order-form
 
 mixin index()
 	- menu = getData('menu').menu
@@ -37,4 +38,9 @@ mixin index()
 			+e.main
 				+e.main-content
 						+main-content
+
+		+e.order-form
+			+order-form({
+				type: 'hidden'
+			})
 

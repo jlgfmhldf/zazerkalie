@@ -1,0 +1,34 @@
+mixin order-form(data)
+	- parrentClass = 'order-form'
+	- state = data.state || ''
+	- classType = parrentClass + state || ''
+
+
+	+b.order-form(class=classType id='order-form')
+		.overlay
+			+e.close
+			+e('form').form(id='order-form-content' method='post' enctype='multipart/form-data')
+				+e.title.main-content__title Информация о заказе
+				+e.field
+					+e('input').input(placeholder='Ваше имя' name='name')
+				+e.field
+					+e('input').input(placeholder='Ваш email' name='email' requaired)
+				+e.field
+					+e('input').input(placeholder='Ваш телефон' type='phone' name='phone')
+				+e.field
+					+e('textarea').input_textarea(placeholder='Ваше сообщение' name='message')
+				+e.field
+					+e('input').input_file(placeholder='Приложить файл' type='file' name='file')
+				+e.field
+					+e.btn
+						+btn({
+							text: 'Заказать',
+							style: 'green'
+						})
+
+			+e.result
+				+e.title_result.main-content__title Информация о заказе отправлена! <br> Мы свяжемся с вами для уточнения деталей.
+
+
+
+
