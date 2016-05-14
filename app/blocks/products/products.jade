@@ -2,80 +2,17 @@ mixin products()
 	+b.products
 		- n = 0;
 
-			+e.product
-				+e('a').wrapper(href='https://placeimg.com/500/400/animals?random='+v, data-lightbox='products' data-title='Коннектор стена-стекло, 520 р/шт.')
-					+e('img').photo(src='https://placeimg.com/154/111/animals?random='+v)
-				+e('span').text Коннектор стена-стекло, 520 р/шт.
+		while n < 10
 
-				+e('button').btn Купить
+			- n++
 
 			+e.product
-				+e('a').wrapper(href='https://placeimg.com/500/400/animals?random=' + v, data-lightbox='products' data-title='Коннектор стена-стекло, 520 р/шт.')
-					+e('img').photo(src='https://placeimg.com/154/111/animals?random=' + v)
-				+e('span').text Коннектор стена-стекло, 520 р/шт.
+				+e('a').wrapper(href='https://placeimg.com/500/400/animals?random='+n, data-lightbox='products' data-title='Коннектор стена-стекло, 520 р/шт.')
+					+e('img').photo(src='https://placeimg.com/154/111/animals?random='+n)
+				+e('span').text
+					+e('span').text-inside_name Коннектор стена-стекло
+					+e('span').text-inside_price 520 р/шт.
+					+e('span').text-inside_size 10
 
-				+e('button').btn Купить
+				+e('a').btn(href='#') Купить
 
-			+e.product
-				+e('a').wrapper(href='https://placeimg.com/500/400/animals?random=' + v, data-lightbox='products' data-title='Коннектор стена-стекло, 520 р/шт.')
-					+e('img').photo(src='https://placeimg.com/154/111/animals?random=' + v)
-				+e('span').text Коннектор стена-стекло, 520 р/шт.
-
-				+e('button').btn Купить
-
-			+e.product
-				+e('a').wrapper(href='https://placeimg.com/500/400/animals?random=' + v, data-lightbox='products' data-title='Коннектор стена-стекло, 520 р/шт.')
-					+e('img').photo(src='https://placeimg.com/154/111/animals?random=' + v)
-				+e('span').text Коннектор стена-стекло, 520 р/шт.
-
-				+e('button').btn Купить
-
-			+e.product
-				+e('a').wrapper(href='https://placeimg.com/500/400/animals?random=' + v, data-lightbox='products' data-title='Коннектор стена-стекло, 520 р/шт.')
-					+e('img').photo(src='https://placeimg.com/154/111/animals?random=' + v)
-				+e('span').text Коннектор стена-стекло, 520 р/шт.
-
-				+e('button').btn Купить
-
-
-			+e.product
-				+e('a').wrapper(href='https://placeimg.com/500/400/animals?random=' + v, data-lightbox='products' data-title='Коннектор стена-стекло, 520 р/шт.')
-					+e('img').photo(src='https://placeimg.com/154/111/animals?random=' + v)
-				+e('span').text Коннектор стена-стекло, 520 р/шт.
-
-				+e('button').btn Купить
-
-			+e.product
-				+e('a').wrapper(href='https://placeimg.com/500/400/animals?random=' + v, data-lightbox='products' data-title='Коннектор стена-стекло, 520 р/шт.')
-					+e('img').photo(src='https://placeimg.com/154/111/animals?random=' + v)
-				+e('span').text Коннектор стена-стекло, 520 р/шт.
-
-				+e('button').btn Купить
-
-			+e.product
-				+e('a').wrapper(href='https://placeimg.com/500/400/animals?random=' + v, data-lightbox='products' data-title='Коннектор стена-стекло, 520 р/шт.')
-					+e('img').photo(src='https://placeimg.com/154/111/animals?random=' + v)
-				+e('span').text Коннектор стена-стекло, 520 р/шт.
-
-				+e('button').btn Купить
-
-			+e.product
-				+e('a').wrapper(href='https://placeimg.com/500/400/animals?random=' + v, data-lightbox='products' data-title='Коннектор стена-стекло, 520 р/шт.')
-					+e('img').photo(src='https://placeimg.com/154/111/animals?random=' + v)
-				+e('span').text Коннектор стена-стекло, 520 р/шт.
-
-				+e('button').btn Купить
-
-			+e.product
-				+e('a').wrapper(href='https://placeimg.com/500/400/animals?random=' + v, data-lightbox='products' data-title='Коннектор стена-стекло, 520 р/шт.')
-					+e('img').photo(src='https://placeimg.com/154/111/animals?random=' + v)
-				+e('span').text Коннектор стена-стекло, 520 р/шт.
-
-				+e('button').btn Купить
-
-			+e.product
-				+e('a').wrapper(href='https://placeimg.com/500/400/animals?random=' + v, data-lightbox='products' data-title='Коннектор стена-стекло, 520 р/шт.')
-					+e('img').photo(src='https://placeimg.com/154/111/animals?random=' + v)
-				+e('span').text Коннектор стена-стекло, 520 р/шт.
-
-				+e('button').btn Купить

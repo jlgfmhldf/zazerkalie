@@ -6,28 +6,32 @@ mixin order-form(data)
 
 	+b.order-form(class=classType id='order-form')
 		.overlay
+
 			+e.close
-			+e('form').form(id='order-form-content' method='post' enctype='multipart/form-data')
-				+e.title.main-content__title Информация о заказе
-				+e.field
-					+e('input').input(placeholder='Ваше имя' name='name')
-				+e.field
-					+e('input').input(placeholder='Ваш email' name='email' requaired)
-				+e.field
-					+e('input').input(placeholder='Ваш телефон' type='phone' name='phone')
-				+e.field
-					+e('textarea').input_textarea(placeholder='Ваше сообщение' name='message')
-				+e.field
-					+e('input').input_file(placeholder='Приложить файл' type='file' name='file')
-				+e.field
-					+e.btn
+
+			+e.content
+
+				+e('form').form(id='order-form-content' method='post' enctype='multipart/form-data' action='server')
+					+e.title.main-content__title Информация о заказе
+					+e.field
+						+e('input').input(placeholder='Ваше имя' name='name')
+					+e.field
+						+e('input').input(placeholder='Ваш email' name='email' requaired)
+					+e.field
+						+e('input').input(placeholder='Ваш телефон' type='phone' name='phone')
+					+e.field
+						+e('textarea').input_textarea(placeholder='Ваше сообщение' name='message')
+					+e.field
+						+e('input').input_file(placeholder='Приложить файл' type='file' name='file')
+					+e.field
 						+btn({
 							text: 'Заказать',
-							style: 'green'
+							style: 'green',
+							class: 'order-form__btn'
 						})
 
-			+e.result
-				+e.title_result.main-content__title Информация о заказе отправлена! <br> Мы свяжемся с вами для уточнения деталей.
+				+e.result.hidden
+					+e.title_result.main-content__title Информация о заказе отправлена! <br> Мы свяжемся с вами для уточнения деталей.
 
 
 

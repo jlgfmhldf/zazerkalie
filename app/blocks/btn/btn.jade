@@ -1,3 +1,8 @@
 mixin btn(data)
-	+b('button').btn(class=data.style?'btn_style_' + data.style:'' type=data.type?data.type:'')
+	- mods = data.style?'btn_style_' + data.style:''
+	- cls = data.class?data.class: ''
+	+b('button').btn(
+		class=mods + cls
+		type=data.type?data.type:''
+	)
 		+e.text=data.text

@@ -7,6 +7,13 @@
 
 	&__photo
 		max-width 100%
+		min-height: 80px;
+		background-image url(http://www.prostor-fish.ru/assets/templates/site/img/no-photo.jpg)
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+		border: 0;
+		width 100%
 
 	&__wrapper
 		display block
@@ -44,6 +51,10 @@
 		text-align-last left
 		color #000
 
+	&__text-inside
+		display inline-block
+
+
 	&__btn
 		border 2px solid $blue
 		padding 8px
@@ -54,3 +65,6 @@
 		background-size 400%
 		transition all .4s ease-in-out
 		text-decoration underline
+		color inherit
+		margin-top 7px
+		display inline-block
