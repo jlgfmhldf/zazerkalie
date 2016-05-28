@@ -78,7 +78,7 @@ function runWebpack(watch = false) {
 	};
 
 	return gulp
-		.src('app/scripts/app.js')
+		.src('app/**/*.js')
 		.pipe(plumber({errorHandler: errorHandler('Error in \'scripts\' task')}))
 		.pipe(webpackStream(webpackConfig, null, statsLogger))
 		.pipe(gulp.dest('dist/assets/scripts'));

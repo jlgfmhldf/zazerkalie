@@ -1,6 +1,6 @@
 //import lightbox from 'lightbox2';
 import $ from 'jquery';
-import '../blocks/products/product.js'
+import '../blocks/products/products.js'
 
 $(() => {
 	'use strict';

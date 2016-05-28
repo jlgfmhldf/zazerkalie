@@ -1,17 +1,37 @@
 import $ from 'jquery';
-import validate from 'jquery-validation';
-import mask from 'jquery-mask-plugin';
 import Form from '../order-form/order-form.js';
-import {selectors, classes} from '../index/index.js';
+import masonry from 'masonry-layout';
+import imagesloaded from '../../../node_modules/imagesloaded/imagesloaded.pkgd.min';
 
+const $products = $('.products');
+const $product = $products.find('.product');
+const $btn = $products.find('.products__btn');
 
-const $btn = $('.products__btn');
+// $products.masonry({
+// 	// options...
+// 	itemSelector: '.product__product',
+// 	columnWidth: 200
+// });
+
+new imagesloaded('.products', function () {
+
+	new masonry( '.products', {
+		// options...
+		itemSelector: '.products__product',
+		columnWidth: 200,
+		gutter: 25
+	});
+});
+
+// Форма
 
 const form = new Form();
 
 $btn.on('click', () => {
 	form.toggle(true);
 });
+
+
 
 //function mailTo(self) {
 //	const $self = $(self);

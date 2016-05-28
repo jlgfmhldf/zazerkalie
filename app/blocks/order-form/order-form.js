@@ -90,7 +90,6 @@ export default class Form {
 
 	toggle(bool) {
 		utils.toggleScroll(bool);
-		//TODO: clear errors function
 		this.init();
 		$form.toggleClass(formClsActive, bool);
 	}
@@ -125,6 +124,7 @@ dom.$content.validate({
 	highlight: utils.highlight(true),
 	unhighlight: utils.highlight(false),
 	submitHandler: function(form) {
+		let file = inputs.$file[0].files[0];
 
 		let self = dom.$content;
 		let method = self.attr('method');
@@ -139,10 +139,7 @@ dom.$content.validate({
 		data.append('message', inputs.$message.text());
 		data.append('formid', self.attr('id'));
 
-		//data.append('file', inputs.file.files[0]);
-
-		//data.append('key1', 'value1');
-		//data.append('key2', 'value2');
+		file !== undefined ? data.append('file', file): null;
 
 		request.open(method, action, true);
 		request.send(data);
